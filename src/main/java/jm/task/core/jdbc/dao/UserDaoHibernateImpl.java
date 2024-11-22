@@ -22,6 +22,8 @@ public class UserDaoHibernateImpl implements UserDao {
             session.createSQLQuery(query).executeUpdate();
             session.getTransaction().commit();
             session.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -35,6 +37,8 @@ public class UserDaoHibernateImpl implements UserDao {
             session.createSQLQuery(query).executeUpdate();
             session.getTransaction().commit();
             session.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
